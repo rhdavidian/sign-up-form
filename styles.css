@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    width: auto;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: min(70vw, 700px);
+    margin: auto;
+    background-color: rgb(240, 238, 238);
+}
+
+.logo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: norse-bold;
+    font-size: 68pt;
+    color: white;
+    padding-top: 24px;
+    width: min(550px, 50vw);
+    background-color: rgb(14, 14, 14, .5);
+    position: relative;
+    bottom: 65vh;
+}   
+.odin {
+    width: 1em;
+    height: auto;
+    align-items: center;
+}
+.leaves {
+    margin-bottom: -173px;
+    width: min(550px, 50vw);
+    height: 100vh;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 238, 238);
+    padding-left: 0px;
+    height: 100%;
+    margin: 0;
+  }
+
+.para,
+h2,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+.para {
+    padding-right: 100px;
+    padding-left: 40px;
+  }
+h2 {
+    margin: 0px 0 25px 0;
+  }
+p {
+    width: 400px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight:700;
+}
+label span {
+    display: block;
+    margin: 10px 0 0px 0;
+  }
+span {
+    display: inline-block;
+}
+input {
+    width: 115%;
+}
+
+.form {
+    background-color: white;
+    box-shadow: 0px 2px 1em rgb(181, 180, 180);
+    margin: 30px 0 15px 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+.right {
+    margin-left: 40px;
+}
+
+.btn {
+    display: flex;
+    margin-top: 40px;
+  }
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 20px 35px;
+    border-radius: 15%;
+    border: none;
+  }
+
+  .login {
+    color:#596D48;
+    text-decoration: none;
+  }
+
+  input[type="password"]:invalid,
+  input[type="email"]:invalid {
+    border: 2px solid red;
+    box-shadow: 0px 2px 1em red;
+  }
+ 
